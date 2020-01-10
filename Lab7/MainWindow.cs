@@ -267,6 +267,7 @@ namespace Lab8
 
         private void setprofessor_Click(object sender, EventArgs e)
         {
+            bool match = false;
             if (institute.Count == 0)
             {
                 MessageBox.Show("В институте нет преподавателей и студентов");
@@ -282,7 +283,6 @@ namespace Lab8
                         {
                             string debt = student.Debt;
 
-                            bool match = false;
                             int i = 0;
                             Professor professor = null;
                             while (i <= institute.Count - 1 && !match)
@@ -299,7 +299,6 @@ namespace Lab8
                             {
                                 student.DebtProfessor = professor.LastName;
                                 ShowAllPersons();
-                                MessageBox.Show("Преподаватели на пересдачу успешно назначены");
                             }
                             else
                             {
@@ -310,6 +309,7 @@ namespace Lab8
                     }
                 }
             }
+            MessageBox.Show("Преподаватели на пересдачу успешно назначены");
         }
     }
 }
