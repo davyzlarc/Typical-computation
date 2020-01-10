@@ -56,7 +56,7 @@
             this.changeAverageMarkButton.TabIndex = 4;
             this.changeAverageMarkButton.Text = "Изменить средний балл студента";
             this.changeAverageMarkButton.UseVisualStyleBackColor = true;
-            this.changeAverageMarkButton.Click += new System.EventHandler(this.changeAverageMarkButton_Click);
+            this.changeAverageMarkButton.Click += new System.EventHandler(this.ChangeAverageMarkButton_Click);
             // 
             // changeNumOfPublishesButton
             // 
@@ -68,7 +68,7 @@
             this.changeNumOfPublishesButton.TabIndex = 6;
             this.changeNumOfPublishesButton.Text = "Изменить количество публикаций зав. кафедрой";
             this.changeNumOfPublishesButton.UseVisualStyleBackColor = true;
-            this.changeNumOfPublishesButton.Click += new System.EventHandler(this.changeNumOfPublishesButton_Click);
+            this.changeNumOfPublishesButton.Click += new System.EventHandler(this.ChangeNumOfPublishesButton_Click);
             // 
             // changeExperienceButton
             // 
@@ -80,7 +80,7 @@
             this.changeExperienceButton.TabIndex = 5;
             this.changeExperienceButton.Text = "Изменить стаж преподавателя";
             this.changeExperienceButton.UseVisualStyleBackColor = true;
-            this.changeExperienceButton.Click += new System.EventHandler(this.changeExperienceButton_Click);
+            this.changeExperienceButton.Click += new System.EventHandler(this.ChangeExperienceButton_Click);
             // 
             // addProfessorButton
             // 
@@ -92,7 +92,7 @@
             this.addProfessorButton.TabIndex = 2;
             this.addProfessorButton.Text = "Добавить преподавателя";
             this.addProfessorButton.UseVisualStyleBackColor = true;
-            this.addProfessorButton.Click += new System.EventHandler(this.addProfessorButton_Click);
+            this.addProfessorButton.Click += new System.EventHandler(this.AddProfessorButton_Click);
             // 
             // addStudentButton
             // 
@@ -104,7 +104,7 @@
             this.addStudentButton.TabIndex = 1;
             this.addStudentButton.Text = "Добавить студента";
             this.addStudentButton.UseVisualStyleBackColor = true;
-            this.addStudentButton.Click += new System.EventHandler(this.addStudentButton_Click);
+            this.addStudentButton.Click += new System.EventHandler(this.AddStudentButton_Click);
             // 
             // addHeadOfCathedraButton
             // 
@@ -116,7 +116,7 @@
             this.addHeadOfCathedraButton.TabIndex = 3;
             this.addHeadOfCathedraButton.Text = "Добавить зав. кафедрой";
             this.addHeadOfCathedraButton.UseVisualStyleBackColor = true;
-            this.addHeadOfCathedraButton.Click += new System.EventHandler(this.addHeadOfCathedraButton_Click);
+            this.addHeadOfCathedraButton.Click += new System.EventHandler(this.AddHeadOfCathedraButton_Click);
             // 
             // removePersonButton
             // 
@@ -128,7 +128,7 @@
             this.removePersonButton.TabIndex = 10;
             this.removePersonButton.Text = "Исключить из интститута";
             this.removePersonButton.UseVisualStyleBackColor = true;
-            this.removePersonButton.Click += new System.EventHandler(this.removePersonButton_Click);
+            this.removePersonButton.Click += new System.EventHandler(this.RemovePersonButton_Click);
             // 
             // infoListBox
             // 
@@ -213,7 +213,7 @@
             this.setprofessor.TabIndex = 8;
             this.setprofessor.Text = "Назначить автоматически преподавателей на пересдачу";
             this.setprofessor.UseVisualStyleBackColor = true;
-            this.setprofessor.Click += new System.EventHandler(this.setprofessor_Click);
+            this.setprofessor.Click += new System.EventHandler(this.Setprofessor_Click);
             // 
             // MainWindow
             // 

@@ -34,7 +34,7 @@ namespace Lab8
             }
         }
 
-        private void removePersonButton_Click(object sender, EventArgs e)
+        private void RemovePersonButton_Click(object sender, EventArgs e)
         {
             if (institute.Count == 0)
             {
@@ -48,7 +48,7 @@ namespace Lab8
             }
         }
 
-        private void addStudentButton_Click(object sender, EventArgs e)
+        private void AddStudentButton_Click(object sender, EventArgs e)
         {
             AddStudentWindow addStudentWindow = new AddStudentWindow();
             addStudentWindow.ShowDialog();
@@ -63,7 +63,7 @@ namespace Lab8
             ShowAllPersons();
         }
 
-        private void addProfessorButton_Click(object sender, EventArgs e)
+        private void AddProfessorButton_Click(object sender, EventArgs e)
         {
             AddProfessorWindow addProfessorWindow = new AddProfessorWindow();
             addProfessorWindow.ShowDialog();
@@ -78,7 +78,7 @@ namespace Lab8
             ShowAllPersons();
         }
 
-        private void addHeadOfCathedraButton_Click(object sender, EventArgs e)
+        private void AddHeadOfCathedraButton_Click(object sender, EventArgs e)
         {
             AddHeadOfCathedraWindow addHeadOfCathedraWindow = new AddHeadOfCathedraWindow();
             addHeadOfCathedraWindow.ShowDialog();
@@ -93,7 +93,7 @@ namespace Lab8
             ShowAllPersons();
         }
 
-        private void changeAverageMarkButton_Click(object sender, EventArgs e)
+        private void ChangeAverageMarkButton_Click(object sender, EventArgs e)
         {
             int index = infoListBox.SelectedIndex;
             if (institute.GetPerson(index) is Student)
@@ -119,7 +119,7 @@ namespace Lab8
             }
         }
 
-        private void changeExperienceButton_Click(object sender, EventArgs e)
+        private void ChangeExperienceButton_Click(object sender, EventArgs e)
         {
             int index = infoListBox.SelectedIndex;
             if (institute.GetPerson(index) is Professor)
@@ -145,7 +145,7 @@ namespace Lab8
             }
         }
 
-        private void changeNumOfPublishesButton_Click(object sender, EventArgs e)
+        private void ChangeNumOfPublishesButton_Click(object sender, EventArgs e)
         {
             int index = infoListBox.SelectedIndex;
             if (institute.GetPerson(index) is HeadOfCathedra)
@@ -265,7 +265,7 @@ namespace Lab8
             }
         }
 
-        private void setprofessor_Click(object sender, EventArgs e)
+        private void Setprofessor_Click(object sender, EventArgs e)
         {
             bool match = false;
             if (institute.Count == 0)
