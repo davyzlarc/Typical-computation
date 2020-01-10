@@ -49,7 +49,7 @@
             // 
             this.lastNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lastNameTextBox.Location = new System.Drawing.Point(118, 33);
-            this.lastNameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lastNameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.lastNameTextBox.Name = "lastNameTextBox";
             this.lastNameTextBox.Size = new System.Drawing.Size(215, 21);
             this.lastNameTextBox.TabIndex = 26;
@@ -69,7 +69,7 @@
             // 
             this.firstNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.firstNameTextBox.Location = new System.Drawing.Point(118, 71);
-            this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.firstNameTextBox.Name = "firstNameTextBox";
             this.firstNameTextBox.Size = new System.Drawing.Size(215, 21);
             this.firstNameTextBox.TabIndex = 28;
@@ -89,7 +89,7 @@
             // 
             this.middleNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.middleNameTextBox.Location = new System.Drawing.Point(118, 107);
-            this.middleNameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.middleNameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.middleNameTextBox.Name = "middleNameTextBox";
             this.middleNameTextBox.Size = new System.Drawing.Size(215, 21);
             this.middleNameTextBox.TabIndex = 30;
@@ -109,7 +109,7 @@
             // 
             this.cathedraTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.cathedraTextBox.Location = new System.Drawing.Point(118, 146);
-            this.cathedraTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cathedraTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.cathedraTextBox.Name = "cathedraTextBox";
             this.cathedraTextBox.Size = new System.Drawing.Size(215, 21);
             this.cathedraTextBox.TabIndex = 32;
@@ -129,7 +129,7 @@
             // 
             this.experienceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.experienceTextBox.Location = new System.Drawing.Point(118, 223);
-            this.experienceTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.experienceTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.experienceTextBox.Name = "experienceTextBox";
             this.experienceTextBox.Size = new System.Drawing.Size(215, 21);
             this.experienceTextBox.TabIndex = 36;
@@ -149,7 +149,7 @@
             // 
             this.numberOfPublishesTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.numberOfPublishesTextBox.Location = new System.Drawing.Point(211, 269);
-            this.numberOfPublishesTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numberOfPublishesTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.numberOfPublishesTextBox.Name = "numberOfPublishesTextBox";
             this.numberOfPublishesTextBox.Size = new System.Drawing.Size(122, 21);
             this.numberOfPublishesTextBox.TabIndex = 38;
@@ -169,7 +169,7 @@
             // 
             this.addHeadOfCathedraButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.addHeadOfCathedraButton.Location = new System.Drawing.Point(108, 312);
-            this.addHeadOfCathedraButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addHeadOfCathedraButton.Margin = new System.Windows.Forms.Padding(2);
             this.addHeadOfCathedraButton.Name = "addHeadOfCathedraButton";
             this.addHeadOfCathedraButton.Size = new System.Drawing.Size(180, 43);
             this.addHeadOfCathedraButton.TabIndex = 39;
@@ -201,7 +201,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(376, 366);
+            this.ClientSize = new System.Drawing.Size(385, 366);
             this.Controls.Add(this.textBoxSubject);
             this.Controls.Add(this.labelSubject);
             this.Controls.Add(this.addHeadOfCathedraButton);
@@ -217,7 +217,7 @@
             this.Controls.Add(this.firstNameLabel);
             this.Controls.Add(this.lastNameTextBox);
             this.Controls.Add(this.lastNameLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "AddHeadOfCathedraWindow";
             this.Text = "Добавление заведующего кафедрой";

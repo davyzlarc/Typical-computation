@@ -36,9 +36,16 @@ namespace Lab8
 
         private void removePersonButton_Click(object sender, EventArgs e)
         {
-            int index = infoListBox.SelectedIndex;
-            institute.Remove(index);
-            ShowAllPersons();
+            if (institute.Count == 0)
+            {
+                MessageBox.Show("В институте нет преподавателей и студентов");
+            }
+            else
+            {
+                int index = infoListBox.SelectedIndex;
+                institute.Remove(index);
+                ShowAllPersons();
+            }
         }
 
         private void addStudentButton_Click(object sender, EventArgs e)
@@ -260,38 +267,45 @@ namespace Lab8
 
         private void setprofessor_Click(object sender, EventArgs e)
         {
-            for (int index = 0; index <= institute.Count - 1; index++)
+            if (institute.Count == 0)
             {
-                if (institute.GetPerson(index) is Student)
+                MessageBox.Show("В институте нет преподавателей и студентов");
+            }
+            else
+            {
+                for (int index = 0; index <= institute.Count - 1; index++)
                 {
-                    Student student = (Student)institute.GetPerson(index);
-                    if (student.Debt != null && student.DebtProfessor == null)
+                    if (institute.GetPerson(index) is Student)
                     {
-                        string debt = student.Debt;
-
-                        bool match = false;
-                        int i = 0;
-                        Professor professor = null;
-                        while (i <= institute.Count - 1 && !match)
+                        Student student = (Student)institute.GetPerson(index);
+                        if (student.Debt != null && student.DebtProfessor == null)
                         {
-                            if (institute.GetPerson(i) is Professor)
+                            string debt = student.Debt;
+
+                            bool match = false;
+                            int i = 0;
+                            Professor professor = null;
+                            while (i <= institute.Count - 1 && !match)
                             {
-                                professor = (Professor)institute.GetPerson(i);
-                                if (professor.Subject == debt) match = true;
+                                if (institute.GetPerson(i) is Professor)
+                                {
+                                    professor = (Professor)institute.GetPerson(i);
+                                    if (professor.Subject == debt) match = true;
+                                }
+                                i++;
                             }
-                            i++;
-                        }
 
-                        if (match)
-                        {
-                            student.DebtProfessor = professor.LastName;
-                            ShowAllPersons();
-                            MessageBox.Show("Преподаватели на пересдачу успешно назначены");
-                        }
-                        else
-                        {
-                            MessageBox.Show("Нет преподавателя по предмету \"" + debt + "\"" + ", по которому задолженность у студента - " + student.LastName);
-                            textBoxDebt.Clear();
+                            if (match)
+                            {
+                                student.DebtProfessor = professor.LastName;
+                                ShowAllPersons();
+                                MessageBox.Show("Преподаватели на пересдачу успешно назначены");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Нет преподавателя по предмету \"" + debt + "\"" + ", по которому задолженность у студента - " + student.LastName);
+                                textBoxDebt.Clear();
+                            }
                         }
                     }
                 }
