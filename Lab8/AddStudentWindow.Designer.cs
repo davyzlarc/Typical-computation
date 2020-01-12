@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddStudentWindow));
             this.lastNameLabel = new System.Windows.Forms.Label();
             this.lastNameTextBox = new System.Windows.Forms.TextBox();
             this.firstNameTextBox = new System.Windows.Forms.TextBox();
@@ -56,7 +57,7 @@
             // 
             this.lastNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lastNameTextBox.Location = new System.Drawing.Point(107, 38);
-            this.lastNameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lastNameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.lastNameTextBox.Name = "lastNameTextBox";
             this.lastNameTextBox.Size = new System.Drawing.Size(215, 21);
             this.lastNameTextBox.TabIndex = 1;
@@ -65,7 +66,7 @@
             // 
             this.firstNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.firstNameTextBox.Location = new System.Drawing.Point(107, 73);
-            this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.firstNameTextBox.Name = "firstNameTextBox";
             this.firstNameTextBox.Size = new System.Drawing.Size(215, 21);
             this.firstNameTextBox.TabIndex = 3;
@@ -85,7 +86,7 @@
             // 
             this.middleNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.middleNameTextBox.Location = new System.Drawing.Point(107, 112);
-            this.middleNameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.middleNameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.middleNameTextBox.Name = "middleNameTextBox";
             this.middleNameTextBox.Size = new System.Drawing.Size(215, 21);
             this.middleNameTextBox.TabIndex = 5;
@@ -105,7 +106,7 @@
             // 
             this.courseTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.courseTextBox.Location = new System.Drawing.Point(140, 150);
-            this.courseTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.courseTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.courseTextBox.Name = "courseTextBox";
             this.courseTextBox.Size = new System.Drawing.Size(182, 21);
             this.courseTextBox.TabIndex = 9;
@@ -125,7 +126,7 @@
             // 
             this.averageMarkTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.averageMarkTextBox.Location = new System.Drawing.Point(140, 188);
-            this.averageMarkTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.averageMarkTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.averageMarkTextBox.Name = "averageMarkTextBox";
             this.averageMarkTextBox.Size = new System.Drawing.Size(182, 21);
             this.averageMarkTextBox.TabIndex = 12;
@@ -144,8 +145,8 @@
             // addStudentButton
             // 
             this.addStudentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.addStudentButton.Location = new System.Drawing.Point(96, 253);
-            this.addStudentButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addStudentButton.Location = new System.Drawing.Point(107, 235);
+            this.addStudentButton.Margin = new System.Windows.Forms.Padding(2);
             this.addStudentButton.Name = "addStudentButton";
             this.addStudentButton.Size = new System.Drawing.Size(161, 34);
             this.addStudentButton.TabIndex = 13;
@@ -155,9 +156,10 @@
             // 
             // AddStudentWindow
             // 
+            this.AcceptButton = this.addStudentButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 309);
+            this.ClientSize = new System.Drawing.Size(364, 283);
             this.Controls.Add(this.addStudentButton);
             this.Controls.Add(this.averageMarkTextBox);
             this.Controls.Add(this.averageMarkLabel);
@@ -169,7 +171,9 @@
             this.Controls.Add(this.firstNameLabel);
             this.Controls.Add(this.lastNameTextBox);
             this.Controls.Add(this.lastNameLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "AddStudentWindow";
             this.Text = "Добавление студента";

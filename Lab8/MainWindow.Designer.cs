@@ -132,21 +132,22 @@
             // 
             // infoListBox
             // 
-            this.infoListBox.Dock = System.Windows.Forms.DockStyle.Top;
             this.infoListBox.Font = new System.Drawing.Font("Calibri", 10F);
             this.infoListBox.FormattingEnabled = true;
             this.infoListBox.HorizontalScrollbar = true;
             this.infoListBox.ItemHeight = 15;
-            this.infoListBox.Location = new System.Drawing.Point(0, 0);
+            this.infoListBox.Items.AddRange(new object[] {
+            "Иванов "});
+            this.infoListBox.Location = new System.Drawing.Point(11, 11);
             this.infoListBox.Margin = new System.Windows.Forms.Padding(2);
             this.infoListBox.Name = "infoListBox";
-            this.infoListBox.Size = new System.Drawing.Size(977, 244);
+            this.infoListBox.Size = new System.Drawing.Size(955, 244);
             this.infoListBox.TabIndex = 9;
             // 
             // newValueLabel
             // 
             this.newValueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.newValueLabel.Location = new System.Drawing.Point(29, 339);
+            this.newValueLabel.Location = new System.Drawing.Point(24, 340);
             this.newValueLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.newValueLabel.Name = "newValueLabel";
             this.newValueLabel.Size = new System.Drawing.Size(214, 37);
@@ -155,10 +156,10 @@
             // 
             // v
             // 
-            this.v.Location = new System.Drawing.Point(32, 379);
+            this.v.Location = new System.Drawing.Point(27, 377);
             this.v.Margin = new System.Windows.Forms.Padding(2);
             this.v.Name = "v";
-            this.v.Size = new System.Drawing.Size(211, 20);
+            this.v.Size = new System.Drawing.Size(216, 20);
             this.v.TabIndex = 11;
             // 
             // addDebt
@@ -188,7 +189,7 @@
             // debt_label
             // 
             this.debt_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.debt_label.Location = new System.Drawing.Point(29, 402);
+            this.debt_label.Location = new System.Drawing.Point(24, 413);
             this.debt_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.debt_label.Name = "debt_label";
             this.debt_label.Size = new System.Drawing.Size(231, 36);
@@ -197,10 +198,10 @@
             // 
             // textBoxDebt
             // 
-            this.textBoxDebt.Location = new System.Drawing.Point(32, 440);
+            this.textBoxDebt.Location = new System.Drawing.Point(27, 451);
             this.textBoxDebt.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxDebt.Name = "textBoxDebt";
-            this.textBoxDebt.Size = new System.Drawing.Size(211, 20);
+            this.textBoxDebt.Size = new System.Drawing.Size(216, 20);
             this.textBoxDebt.TabIndex = 12;
             // 
             // setprofessor
@@ -235,6 +236,7 @@
             this.Controls.Add(this.changeExperienceButton);
             this.Controls.Add(this.changeNumOfPublishesButton);
             this.Controls.Add(this.changeAverageMarkButton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainWindow";

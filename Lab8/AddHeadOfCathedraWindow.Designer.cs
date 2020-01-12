@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddHeadOfCathedraWindow));
             this.lastNameTextBox = new System.Windows.Forms.TextBox();
             this.lastNameLabel = new System.Windows.Forms.Label();
             this.firstNameTextBox = new System.Windows.Forms.TextBox();
@@ -168,7 +169,7 @@
             // addHeadOfCathedraButton
             // 
             this.addHeadOfCathedraButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.addHeadOfCathedraButton.Location = new System.Drawing.Point(108, 312);
+            this.addHeadOfCathedraButton.Location = new System.Drawing.Point(100, 312);
             this.addHeadOfCathedraButton.Margin = new System.Windows.Forms.Padding(2);
             this.addHeadOfCathedraButton.Name = "addHeadOfCathedraButton";
             this.addHeadOfCathedraButton.Size = new System.Drawing.Size(180, 43);
@@ -199,6 +200,7 @@
             // 
             // AddHeadOfCathedraWindow
             // 
+            this.AcceptButton = this.addHeadOfCathedraButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(385, 366);
@@ -217,6 +219,8 @@
             this.Controls.Add(this.firstNameLabel);
             this.Controls.Add(this.lastNameTextBox);
             this.Controls.Add(this.lastNameLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "AddHeadOfCathedraWindow";
