@@ -136,8 +136,6 @@
             this.infoListBox.FormattingEnabled = true;
             this.infoListBox.HorizontalScrollbar = true;
             this.infoListBox.ItemHeight = 15;
-            this.infoListBox.Items.AddRange(new object[] {
-            "Иванов "});
             this.infoListBox.Location = new System.Drawing.Point(11, 11);
             this.infoListBox.Margin = new System.Windows.Forms.Padding(2);
             this.infoListBox.Name = "infoListBox";

@@ -200,6 +200,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "AddProfessorWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Добавление преподавателя";
             this.ResumeLayout(false);
             this.PerformLayout();

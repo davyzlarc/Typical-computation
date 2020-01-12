@@ -224,6 +224,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "AddHeadOfCathedraWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Добавление заведующего кафедрой";
             this.ResumeLayout(false);
             this.PerformLayout();
