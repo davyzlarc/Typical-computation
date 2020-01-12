@@ -52,14 +52,11 @@ namespace Lab8
         {
             AddStudentWindow addStudentWindow = new AddStudentWindow();
             addStudentWindow.ShowDialog();
-            if (addStudentWindow.firstNameTextBox.Text != "" && addStudentWindow.middleNameTextBox.Text != ""
-                && addStudentWindow.lastNameTextBox.Text != "" && addStudentWindow.courseTextBox.Text != ""
-                && addStudentWindow.averageMarkTextBox.Text != "")
-            {
-                institute.Add(new Student(addStudentWindow.firstNameTextBox.Text, addStudentWindow.middleNameTextBox.Text,
-                    addStudentWindow.lastNameTextBox.Text, Convert.ToInt32(addStudentWindow.courseTextBox.Text),
-                    Convert.ToDouble(addStudentWindow.averageMarkTextBox.Text)));
-            }
+
+            institute.Add(new Student(addStudentWindow.firstNameTextBox.Text, addStudentWindow.middleNameTextBox.Text,
+                addStudentWindow.lastNameTextBox.Text, Convert.ToInt32(addStudentWindow.courseTextBox.Text),
+                Convert.ToDouble(addStudentWindow.averageMarkTextBox.Text)));
+
             ShowAllPersons();
         }
 
@@ -67,14 +64,11 @@ namespace Lab8
         {
             AddProfessorWindow addProfessorWindow = new AddProfessorWindow();
             addProfessorWindow.ShowDialog();
-            if (addProfessorWindow.firstNameTextBox.Text != "" && addProfessorWindow.middleNameTextBox.Text != ""
-                && addProfessorWindow.lastNameTextBox.Text != "" && addProfessorWindow.cathedraTextBox.Text != ""
-                && addProfessorWindow.experienceTextBox.Text != "")
-            {
-                institute.Add(new Professor(addProfessorWindow.firstNameTextBox.Text, addProfessorWindow.middleNameTextBox.Text,
-                    addProfessorWindow.lastNameTextBox.Text, Convert.ToInt32(addProfessorWindow.experienceTextBox.Text),
-                    addProfessorWindow.cathedraTextBox.Text, addProfessorWindow.textBoxSubject.Text));
-            }
+
+            institute.Add(new Professor(addProfessorWindow.firstNameTextBox.Text, addProfessorWindow.middleNameTextBox.Text,
+                addProfessorWindow.lastNameTextBox.Text, Convert.ToInt32(addProfessorWindow.experienceTextBox.Text),
+                addProfessorWindow.cathedraTextBox.Text, addProfessorWindow.textBoxSubject.Text));
+
             ShowAllPersons();
         }
 
@@ -82,14 +76,11 @@ namespace Lab8
         {
             AddHeadOfCathedraWindow addHeadOfCathedraWindow = new AddHeadOfCathedraWindow();
             addHeadOfCathedraWindow.ShowDialog();
-            if (addHeadOfCathedraWindow.firstNameTextBox.Text != "" && addHeadOfCathedraWindow.middleNameTextBox.Text != ""
-                && addHeadOfCathedraWindow.lastNameTextBox.Text != "" && addHeadOfCathedraWindow.cathedraTextBox.Text != ""
-                && addHeadOfCathedraWindow.experienceTextBox.Text != "" && addHeadOfCathedraWindow.numberOfPublishesTextBox.Text != "")
-            {
-                institute.Add(new HeadOfCathedra(addHeadOfCathedraWindow.firstNameTextBox.Text, addHeadOfCathedraWindow.middleNameTextBox.Text,
-                    addHeadOfCathedraWindow.lastNameTextBox.Text, Convert.ToInt32(addHeadOfCathedraWindow.experienceTextBox.Text),
-                    addHeadOfCathedraWindow.cathedraTextBox.Text, addHeadOfCathedraWindow.textBoxSubject.Text, Convert.ToInt32(addHeadOfCathedraWindow.numberOfPublishesTextBox.Text)));
-            }
+
+            institute.Add(new HeadOfCathedra(addHeadOfCathedraWindow.firstNameTextBox.Text, addHeadOfCathedraWindow.middleNameTextBox.Text,
+                addHeadOfCathedraWindow.lastNameTextBox.Text, Convert.ToInt32(addHeadOfCathedraWindow.experienceTextBox.Text),
+                addHeadOfCathedraWindow.cathedraTextBox.Text, addHeadOfCathedraWindow.textBoxSubject.Text, Convert.ToInt32(addHeadOfCathedraWindow.numberOfPublishesTextBox.Text)));
+
             ShowAllPersons();
         }
 

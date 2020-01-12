@@ -24,7 +24,8 @@ namespace Lab8
             int numberOfPublishes;
 
             if (firstNameTextBox.Text == "" || middleNameTextBox.Text == "" || lastNameTextBox.Text == ""
-                || cathedraTextBox.Text == "" || textBoxSubject.Text == "" || experienceTextBox.Text == "")
+                || cathedraTextBox.Text == "" || textBoxSubject.Text == "" || experienceTextBox.Text == ""
+                || numberOfPublishesTextBox.Text=="")
             {
                 MessageBox.Show("Все поля должны быть заполнены");
             }

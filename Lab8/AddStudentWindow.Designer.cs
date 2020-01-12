@@ -75,7 +75,7 @@
             // 
             this.firstNameLabel.AutoSize = true;
             this.firstNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.firstNameLabel.Location = new System.Drawing.Point(32, 78);
+            this.firstNameLabel.Location = new System.Drawing.Point(32, 76);
             this.firstNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.firstNameLabel.Name = "firstNameLabel";
             this.firstNameLabel.Size = new System.Drawing.Size(35, 15);
@@ -135,7 +135,7 @@
             // 
             this.averageMarkLabel.AutoSize = true;
             this.averageMarkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.averageMarkLabel.Location = new System.Drawing.Point(32, 193);
+            this.averageMarkLabel.Location = new System.Drawing.Point(32, 191);
             this.averageMarkLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.averageMarkLabel.Name = "averageMarkLabel";
             this.averageMarkLabel.Size = new System.Drawing.Size(91, 15);

@@ -57,7 +57,7 @@
             // 
             this.lastNameLabel.AutoSize = true;
             this.lastNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lastNameLabel.Location = new System.Drawing.Point(46, 37);
+            this.lastNameLabel.Location = new System.Drawing.Point(46, 40);
             this.lastNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lastNameLabel.Name = "lastNameLabel";
             this.lastNameLabel.Size = new System.Drawing.Size(65, 15);
@@ -77,7 +77,7 @@
             // 
             this.firstNameLabel.AutoSize = true;
             this.firstNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.firstNameLabel.Location = new System.Drawing.Point(46, 76);
+            this.firstNameLabel.Location = new System.Drawing.Point(46, 79);
             this.firstNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.firstNameLabel.Name = "firstNameLabel";
             this.firstNameLabel.Size = new System.Drawing.Size(35, 15);
@@ -97,7 +97,7 @@
             // 
             this.middleNameLabel.AutoSize = true;
             this.middleNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.middleNameLabel.Location = new System.Drawing.Point(46, 115);
+            this.middleNameLabel.Location = new System.Drawing.Point(46, 118);
             this.middleNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.middleNameLabel.Name = "middleNameLabel";
             this.middleNameLabel.Size = new System.Drawing.Size(66, 15);
@@ -117,7 +117,7 @@
             // 
             this.cathedraLabel.AutoSize = true;
             this.cathedraLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.cathedraLabel.Location = new System.Drawing.Point(46, 154);
+            this.cathedraLabel.Location = new System.Drawing.Point(46, 157);
             this.cathedraLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cathedraLabel.Name = "cathedraLabel";
             this.cathedraLabel.Size = new System.Drawing.Size(64, 15);
@@ -137,7 +137,7 @@
             // 
             this.experienceLabel.AutoSize = true;
             this.experienceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.experienceLabel.Location = new System.Drawing.Point(46, 229);
+            this.experienceLabel.Location = new System.Drawing.Point(46, 232);
             this.experienceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.experienceLabel.Name = "experienceLabel";
             this.experienceLabel.Size = new System.Drawing.Size(41, 15);
@@ -160,7 +160,7 @@
             // 
             this.labelSubject.AutoSize = true;
             this.labelSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.labelSubject.Location = new System.Drawing.Point(46, 190);
+            this.labelSubject.Location = new System.Drawing.Point(46, 193);
             this.labelSubject.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelSubject.Name = "labelSubject";
             this.labelSubject.Size = new System.Drawing.Size(63, 15);
