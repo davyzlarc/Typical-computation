@@ -126,7 +126,7 @@
             this.removePersonButton.Name = "removePersonButton";
             this.removePersonButton.Size = new System.Drawing.Size(216, 36);
             this.removePersonButton.TabIndex = 10;
-            this.removePersonButton.Text = "Исключить из интститута";
+            this.removePersonButton.Text = "Исключить из института";
             this.removePersonButton.UseVisualStyleBackColor = true;
             this.removePersonButton.Click += new System.EventHandler(this.RemovePersonButton_Click);
             // 
