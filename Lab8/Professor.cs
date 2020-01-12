@@ -25,7 +25,7 @@ namespace Lab8
         public override string GetInfo()
         {
             bool isExperience = (Experience > 0);
-            string info = GetFullName() + " - преподаватель по предмету \"" + Subject + "\" на кафедре \"" + Cathedra + "\"" ;
+            string info = GetFullName() + " - преподаватель по предмету \"" + Subject + "\" на кафедре \"" + Cathedra + "\"";
             if (isExperience)
                 info += " со стажем " + Experience + " лет и с зарплатой " + Salary.ToString("F2") + " рублей";
             else

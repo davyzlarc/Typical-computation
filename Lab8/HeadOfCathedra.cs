@@ -9,7 +9,7 @@ namespace Lab8
     public class HeadOfCathedra : Professor
     {
         public int NumberOfPublications { get; set; }
-        public HeadOfCathedra(string fName, string mName, string lName, int exp, string cath,  string subj, int numOfPubl)
+        public HeadOfCathedra(string fName, string mName, string lName, int exp, string cath, string subj, int numOfPubl)
             : base(fName, mName, lName, exp, cath, subj)
         {
             NumberOfPublications = numOfPubl;

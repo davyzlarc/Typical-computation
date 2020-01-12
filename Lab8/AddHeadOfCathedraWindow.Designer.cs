@@ -174,9 +174,10 @@
             this.addHeadOfCathedraButton.Name = "addHeadOfCathedraButton";
             this.addHeadOfCathedraButton.Size = new System.Drawing.Size(180, 43);
             this.addHeadOfCathedraButton.TabIndex = 39;
+            this.addHeadOfCathedraButton.TabStop = false;
             this.addHeadOfCathedraButton.Text = "Добавить заведующего кафедрой";
             this.addHeadOfCathedraButton.UseVisualStyleBackColor = true;
-            this.addHeadOfCathedraButton.Click += new System.EventHandler(this.addHeadOfCathedraButton_Click);
+            this.addHeadOfCathedraButton.Click += new System.EventHandler(this.AddHeadOfCathedraButton_Click);
             // 
             // labelSubject
             // 
@@ -221,6 +222,7 @@
             this.Controls.Add(this.lastNameLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "AddHeadOfCathedraWindow";

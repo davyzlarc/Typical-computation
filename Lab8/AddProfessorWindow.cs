@@ -18,49 +18,59 @@ namespace Lab8
             InitializeComponent();
         }
 
-        private void addProfessorButton_Click(object sender, EventArgs e)
+        private void AddProfessorButton_Click(object sender, EventArgs e)
         {
             int experience;
 
             if (firstNameTextBox.Text == "" || middleNameTextBox.Text == "" || lastNameTextBox.Text == ""
                 || cathedraTextBox.Text == "" || textBoxSubject.Text == "" || experienceTextBox.Text == "")
             {
-                MessageBox.Show("Все поля должны быть заполнены");
+                MessageBox.Show("Все поля должны быть заполнены", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else if (!Regex.IsMatch(lastNameTextBox.Text, Globals.lastNamePattern))
             {
-                MessageBox.Show("Неверный формат фамилии");
+                MessageBox.Show("Неверный формат фамилии", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 lastNameTextBox.Clear();
             }
             else if (!Regex.IsMatch(firstNameTextBox.Text, Globals.firstAndMiddleNamePattern))
             {
-                MessageBox.Show("Неверный формат имени");
+                MessageBox.Show("Неверный формат имени", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 firstNameTextBox.Clear();
             }
             else if (!Regex.IsMatch(middleNameTextBox.Text, Globals.firstAndMiddleNamePattern))
             {
-                MessageBox.Show("Неверный формат отчества");
+                MessageBox.Show("Неверный формат отчества", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 middleNameTextBox.Clear();
             }
             else if (!Regex.IsMatch(cathedraTextBox.Text, Globals.cathedraPattern))
             {
-                MessageBox.Show("Неверный формат названия кафедры");
+                MessageBox.Show("Неверный формат названия кафедры", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 cathedraTextBox.Clear();
             }
             else if (!Regex.IsMatch(textBoxSubject.Text, Globals.subjectPattern))
             {
-                MessageBox.Show("Неверный формат названия предмета");
+                MessageBox.Show("Неверный формат названия предмета", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBoxSubject.Clear();
             }
             else if (!(Int32.TryParse(experienceTextBox.Text, out experience) && experience >= 0 && experience <= Globals.maxExperience))
             {
-                MessageBox.Show("Некорректный стаж\t\nСтаж может находиться в промежутке [0; " + Globals.maxExperience + ']');
+                MessageBox.Show("Некорректный стаж\t\nСтаж может находиться в промежутке [0; " + Globals.maxExperience + ']',
+                    "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 experienceTextBox.Clear();
             }
             else
             {
+                this.DialogResult = System.Windows.Forms.DialogResult.OK;
                 this.Close();
             }
+        }
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == (Keys.Escape))
+            {
+                this.Close();
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
         }
     }
 }

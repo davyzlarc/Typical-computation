@@ -152,9 +152,10 @@
             this.addProfessorButton.Name = "addProfessorButton";
             this.addProfessorButton.Size = new System.Drawing.Size(155, 41);
             this.addProfessorButton.TabIndex = 26;
+            this.addProfessorButton.TabStop = false;
             this.addProfessorButton.Text = "Добавить преподавателя";
             this.addProfessorButton.UseVisualStyleBackColor = true;
-            this.addProfessorButton.Click += new System.EventHandler(this.addProfessorButton_Click);
+            this.addProfessorButton.Click += new System.EventHandler(this.AddProfessorButton_Click);
             // 
             // labelSubject
             // 
@@ -197,6 +198,7 @@
             this.Controls.Add(this.lastNameLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "AddProfessorWindow";

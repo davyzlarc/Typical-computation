@@ -150,9 +150,10 @@
             this.addStudentButton.Name = "addStudentButton";
             this.addStudentButton.Size = new System.Drawing.Size(161, 34);
             this.addStudentButton.TabIndex = 13;
+            this.addStudentButton.TabStop = false;
             this.addStudentButton.Text = "Добавить студента";
             this.addStudentButton.UseVisualStyleBackColor = true;
-            this.addStudentButton.Click += new System.EventHandler(this.addStudentButton_Click);
+            this.addStudentButton.Click += new System.EventHandler(this.AddStudentButton_Click);
             // 
             // AddStudentWindow
             // 
@@ -173,6 +174,8 @@
             this.Controls.Add(this.lastNameLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "AddStudentWindow";

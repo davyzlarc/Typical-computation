@@ -11,8 +11,8 @@ namespace Lab8
         public int Course { get; private set; }
         public double AverageMark { get; set; }
         public double Stipend { get; private set; }
-        public string Debt { get;  set; }
-        public string DebtProfessor { get;  set; }
+        public string Debt { get; set; }
+        public string DebtProfessor { get; set; }
 
 
         public Student(string fName, string mName, string lName, int course, double mark) : base(fName, mName, lName)
@@ -31,8 +31,8 @@ namespace Lab8
                 info += ", не получает стипендии";
             if (Debt != null)
                 info += "; имеется задолженность по предмету " + Debt;
-            if (DebtProfessor != null) 
-                info+= ", преподователь принимающий пересдачу - " + DebtProfessor;
+            if (DebtProfessor != null)
+                info += ", преподователь принимающий пересдачу - " + DebtProfessor;
             return info;
         }
         public void CalculateStipend()
