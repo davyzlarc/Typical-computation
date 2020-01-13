@@ -45,7 +45,7 @@ namespace Lab8
             {
                 if (infoListBox.Items.Count != 0)
                 {
-                    if (infoListBox.SelectedIndex != 0) infoListBox.SelectedIndex--;
+                    if (infoListBox.SelectedIndex != infoListBox.Items.Count - 1) infoListBox.SelectedIndex--;
                     else if (infoListBox.SelectedIndex == -1) infoListBox.SelectedIndex = infoListBox.Items.Count - 1;
                 }
             }

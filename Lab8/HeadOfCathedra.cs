@@ -25,7 +25,7 @@ namespace Lab8
             else
                 info += " без стажа и с зарплатой " + Salary.ToString("F2") + " рублей";
             if (wasPublished)
-                info += ", имеет " + NumberOfPublications + " публикаций";
+                info += ", публикаций - " + NumberOfPublications;
             else
                 info += ", не имеет публикаций";
             return info;
