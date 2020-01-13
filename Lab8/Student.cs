@@ -30,7 +30,7 @@ namespace Lab8
             else
                 info += ", не получает стипендии";
             if (Debt != null)
-                info += "; имеется задолженность по предмету " + Debt;
+                info += "; имеется задолженность по предмету \"" + Debt+"\"";
             if (DebtProfessor != null)
                 info += ", преподователь принимающий пересдачу - " + DebtProfessor;
             return info;
