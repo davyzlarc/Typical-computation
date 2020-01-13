@@ -37,16 +37,17 @@ namespace Lab8
             {
                 if (infoListBox.Items.Count != 0)
                 {
-                    if (infoListBox.SelectedIndex != infoListBox.Items.Count - 1) infoListBox.SelectedIndex++;
-                    else if (infoListBox.SelectedIndex == -1) infoListBox.SelectedIndex = 0;
+                    if (infoListBox.SelectedIndex == -1) infoListBox.SelectedIndex = 0;
+                    else if (infoListBox.SelectedIndex != infoListBox.Items.Count - 1) infoListBox.SelectedIndex++;
                 }
             }
             if (keyData == (Keys.Up | Keys.Control))
             {
                 if (infoListBox.Items.Count != 0)
                 {
-                    if (infoListBox.SelectedIndex != infoListBox.Items.Count - 1) infoListBox.SelectedIndex--;
-                    else if (infoListBox.SelectedIndex == -1) infoListBox.SelectedIndex = infoListBox.Items.Count - 1;
+                    if (infoListBox.SelectedIndex == -1) infoListBox.SelectedIndex = infoListBox.Items.Count - 1;
+                    else if (infoListBox.SelectedIndex != infoListBox.Items.Count - 1) infoListBox.SelectedIndex--;
+
                 }
             }
             if (keyData == (Keys.Down))
@@ -232,7 +233,7 @@ namespace Lab8
             {
                 RemovePersonButton_Click(this, null);
             }
-            if (keyData == (Keys.D1)&& ActiveControl.Name!= "v" && ActiveControl.Name != "textBoxDebt")
+            if (keyData == (Keys.D1) && ActiveControl.Name != "v" && ActiveControl.Name != "textBoxDebt")
             {
                 AddStudentButton_Click(this, null);
             }
