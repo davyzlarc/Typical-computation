@@ -16,6 +16,7 @@ namespace Lab8
         public MainWindow()
         {
             InitializeComponent();
+            this.FormClosing += MainWindow_FormClosing;
         }
 
         private void MainWindow_FormClosing(Object sender, FormClosingEventArgs e)
