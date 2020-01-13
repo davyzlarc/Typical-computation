@@ -294,20 +294,24 @@ namespace Lab8
             }
             else
             {
-                int index = infoListBox.SelectedIndex;
-                if (!(institute.GetPerson(index) is Student))
+                if (infoListBox.SelectedIndex != -1)
                 {
-                    for (int i = 0; i <= institute.Count - 1; i++)
+                    int index = infoListBox.SelectedIndex;
+                    if (!(institute.GetPerson(index) is Student))
                     {
-                        if (institute.GetPerson(i) is Student)
+                        for (int i = 0; i <= institute.Count - 1; i++)
                         {
-                            Student student = (Student)institute.GetPerson(i);
-                            if (student.DebtProfessor == (institute.GetPerson(index).LastName)) student.DebtProfessor = null;
+                            if (institute.GetPerson(i) is Student)
+                            {
+                                Student student = (Student)institute.GetPerson(i);
+                                if (student.DebtProfessor == (institute.GetPerson(index).LastName)) student.DebtProfessor = null;
+                            }
                         }
                     }
+                    institute.Remove(index);
+                    ShowAllPersons();
                 }
-                institute.Remove(index);
-                ShowAllPersons();
+                else MessageBox.Show("Не выбран студент или преподаватель", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
