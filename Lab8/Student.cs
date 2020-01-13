@@ -32,7 +32,7 @@ namespace Lab8
             if (Debt != null)
                 info += "; имеется задолженность по предмету \"" + Debt+"\"";
             if (DebtProfessor != null)
-                info += ", преподователь принимающий пересдачу - " + DebtProfessor;
+                info += ", преподаватель принимающий пересдачу - " + DebtProfessor;
             return info;
         }
         public void CalculateStipend()

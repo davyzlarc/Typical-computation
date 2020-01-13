@@ -227,43 +227,44 @@ namespace Lab8
                         break;
                 }
             }
-            if ((keyData == (Keys.Delete) || keyData == (Keys.Back)) && infoListBox.SelectedIndex != -1)
+            if ((keyData == (Keys.Delete) || keyData == (Keys.Back)) && infoListBox.SelectedIndex != -1
+                && ActiveControl.Name != "v" && ActiveControl.Name != "textBoxDebt")
             {
                 RemovePersonButton_Click(this, null);
             }
-            if (keyData == (Keys.D1))
+            if (keyData == (Keys.D1)&& ActiveControl.Name!= "v" && ActiveControl.Name != "textBoxDebt")
             {
                 AddStudentButton_Click(this, null);
             }
-            if (keyData == (Keys.D2))
+            if (keyData == (Keys.D2) && ActiveControl.Name != "v" && ActiveControl.Name != "textBoxDebt")
             {
                 AddProfessorButton_Click(this, null);
             }
-            if (keyData == (Keys.D3))
+            if (keyData == (Keys.D3) && ActiveControl.Name != "v" && ActiveControl.Name != "textBoxDebt")
             {
                 AddHeadOfCathedraButton_Click(this, null);
             }
-            if (keyData == (Keys.D4))
+            if (keyData == (Keys.D4) && ActiveControl.Name != "v" && ActiveControl.Name != "textBoxDebt")
             {
                 ChangeAverageMarkButton_Click(this, null);
             }
-            if (keyData == (Keys.D5))
+            if (keyData == (Keys.D5) && ActiveControl.Name != "v" && ActiveControl.Name != "textBoxDebt")
             {
                 ChangeExperienceButton_Click(this, null);
             }
-            if (keyData == (Keys.D6))
+            if (keyData == (Keys.D6) && ActiveControl.Name != "v" && ActiveControl.Name != "textBoxDebt")
             {
                 ChangeNumOfPublishesButton_Click(this, null);
             }
-            if (keyData == (Keys.D7))
+            if (keyData == (Keys.D7) && ActiveControl.Name != "v" && ActiveControl.Name != "textBoxDebt")
             {
                 ChangeDebtProfessor_Click(this, null);
             }
-            if (keyData == (Keys.D8))
+            if (keyData == (Keys.D8) && ActiveControl.Name != "v" && ActiveControl.Name != "textBoxDebt")
             {
                 Setprofessor_Click(this, null);
             }
-            if (keyData == (Keys.D9))
+            if (keyData == (Keys.D9) && ActiveControl.Name != "v" && ActiveControl.Name != "textBoxDebt")
             {
                 AddDebt_Click(this, null);
             }
