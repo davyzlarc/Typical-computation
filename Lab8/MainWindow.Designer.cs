@@ -140,7 +140,8 @@
             this.infoListBox.Margin = new System.Windows.Forms.Padding(2);
             this.infoListBox.Name = "infoListBox";
             this.infoListBox.Size = new System.Drawing.Size(955, 244);
-            this.infoListBox.TabIndex = 9;
+            this.infoListBox.TabIndex = 22;
+            this.infoListBox.TabStop = false;
             // 
             // newValueLabel
             // 

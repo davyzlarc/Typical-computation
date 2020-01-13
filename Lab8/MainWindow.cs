@@ -32,6 +32,240 @@ namespace Lab8
             {
                 this.Close();
             }
+            if (keyData == (Keys.Down | Keys.Control))
+            {
+                if (infoListBox.Items.Count != 0)
+                {
+                    if (infoListBox.SelectedIndex != infoListBox.Items.Count - 1) infoListBox.SelectedIndex++;
+                    else if (infoListBox.SelectedIndex == -1) infoListBox.SelectedIndex = 0;
+                }
+            }
+            if (keyData == (Keys.Up | Keys.Control))
+            {
+                if (infoListBox.Items.Count != 0)
+                {
+                    if (infoListBox.SelectedIndex != 0) infoListBox.SelectedIndex--;
+                    else if (infoListBox.SelectedIndex == -1) infoListBox.SelectedIndex = infoListBox.Items.Count - 1;
+                }
+            }
+            if (keyData == (Keys.Down))
+            {
+                int a = infoListBox.SelectedIndex;
+                switch (ActiveControl.Name)
+                {
+                    case "addStudentButton":
+                        addHeadOfCathedraButton.Focus();
+                        break;
+                    case "addProfessorButton":
+                        changeAverageMarkButton.Focus();
+                        break;
+                    case "addHeadOfCathedraButton":
+                        changeExperienceButton.Focus();
+                        break;
+                    case "changeAverageMarkButton":
+                        changeNumOfPublishesButton.Focus();
+                        break;
+                    case "changeExperienceButton":
+                        addDebt.Focus();
+                        break;
+                    case "changeNumOfPublishesButton":
+                        setprofessor.Focus();
+                        break;
+                    case "addDebt":
+                        infoListBox.Focus();
+                        break;
+                    case "setprofessor":
+                        addStudentButton.Focus();
+                        break;
+                    case "changeDebtProfessor":
+                        addProfessorButton.Focus();
+                        break;
+                    case "removePersonButton":
+                        removePersonButton.Focus();
+                        break;
+                    case "v":
+                        textBoxDebt.Focus();
+                        break;
+                    case "textBoxDebt":
+                        removePersonButton.Focus();
+                        break;
+                    default:
+                        infoListBox.Focus();
+                        infoListBox.SelectedIndex = a;
+                        break;
+                }
+            }
+            if (keyData == (Keys.Up))
+            {
+                int a = infoListBox.SelectedIndex;
+                switch (ActiveControl.Name)
+                {
+                    case "addStudentButton":
+                        setprofessor.Focus();
+                        break;
+                    case "addProfessorButton":
+                        changeDebtProfessor.Focus();
+                        break;
+                    case "addHeadOfCathedraButton":
+                        removePersonButton.Focus();
+                        break;
+                    case "changeAverageMarkButton":
+                        addProfessorButton.Focus();
+                        break;
+                    case "changeExperienceButton":
+                        addHeadOfCathedraButton.Focus();
+                        break;
+                    case "changeNumOfPublishesButton":
+                        changeAverageMarkButton.Focus();
+                        break;
+                    case "addDebt":
+                        changeExperienceButton.Focus();
+                        break;
+                    case "setprofessor":
+                        changeNumOfPublishesButton.Focus();
+                        break;
+                    case "changeDebtProfessor":
+                        addDebt.Focus();
+                        break;
+                    case "removePersonButton":
+                        infoListBox.Focus();
+                        break;
+                    case "v":
+                        removePersonButton.Focus();
+                        break;
+                    case "textBoxDebt":
+                        v.Focus();
+                        break;
+                    default:
+                        infoListBox.Focus();
+                        infoListBox.SelectedIndex = a;
+                        break;
+                }
+            }
+            if (keyData == (Keys.Right))
+            {
+                switch (ActiveControl.Name)
+                {
+                    case "addStudentButton":
+                        addStudentButton.Focus();
+                        break;
+                    case "addProfessorButton":
+                        addProfessorButton.Focus();
+                        break;
+                    case "addHeadOfCathedraButton":
+                        changeDebtProfessor.Focus();
+                        break;
+                    case "changeAverageMarkButton":
+                        changeAverageMarkButton.Focus();
+                        break;
+                    case "changeExperienceButton":
+                        changeExperienceButton.Focus();
+                        break;
+                    case "changeNumOfPublishesButton":
+                        removePersonButton.Focus();
+                        break;
+                    case "addDebt":
+                        addDebt.Focus();
+                        break;
+                    case "setprofessor":
+                        setprofessor.Focus();
+                        break;
+                    case "changeDebtProfessor":
+                        v.Focus();
+                        break;
+                    case "removePersonButton":
+                        infoListBox.Focus();
+                        break;
+                    case "v":
+                        changeAverageMarkButton.Focus();
+                        break;
+                    case "textBoxDebt":
+                        addDebt.Focus();
+                        break;
+                }
+            }
+            if (keyData == (Keys.Left))
+            {
+                switch (ActiveControl.Name)
+                {
+                    case "addStudentButton":
+                        v.Focus();
+                        break;
+                    case "addProfessorButton":
+                        addProfessorButton.Focus();
+                        break;
+                    case "addHeadOfCathedraButton":
+                        addHeadOfCathedraButton.Focus();
+                        break;
+                    case "changeAverageMarkButton":
+                        textBoxDebt.Focus();
+                        break;
+                    case "changeExperienceButton":
+                        changeExperienceButton.Focus();
+                        break;
+                    case "changeNumOfPublishesButton":
+                        changeNumOfPublishesButton.Focus();
+                        break;
+                    case "addDebt":
+                        infoListBox.Focus();
+                        break;
+                    case "setprofessor":
+                        setprofessor.Focus();
+                        break;
+                    case "changeDebtProfessor":
+                        changeDebtProfessor.Focus();
+                        break;
+                    case "removePersonButton":
+                        changeAverageMarkButton.Focus();
+                        break;
+                    case "v":
+                        changeNumOfPublishesButton.Focus();
+                        break;
+                    case "textBoxDebt":
+                        changeDebtProfessor.Focus();
+                        break;
+                }
+            }
+            if ((keyData == (Keys.Delete) || keyData == (Keys.Back)) && infoListBox.SelectedIndex != -1)
+            {
+                RemovePersonButton_Click(this, null);
+            }
+            if (keyData == (Keys.D1))
+            {
+                AddStudentButton_Click(this, null);
+            }
+            if (keyData == (Keys.D2))
+            {
+                AddProfessorButton_Click(this, null);
+            }
+            if (keyData == (Keys.D3))
+            {
+                AddHeadOfCathedraButton_Click(this, null);
+            }
+            if (keyData == (Keys.D4))
+            {
+                ChangeAverageMarkButton_Click(this, null);
+            }
+            if (keyData == (Keys.D5))
+            {
+                ChangeExperienceButton_Click(this, null);
+            }
+            if (keyData == (Keys.D6))
+            {
+                ChangeNumOfPublishesButton_Click(this, null);
+            }
+            if (keyData == (Keys.D7))
+            {
+                ChangeDebtProfessor_Click(this, null);
+            }
+            if (keyData == (Keys.D8))
+            {
+                Setprofessor_Click(this, null);
+            }
+            if (keyData == (Keys.D9))
+            {
+                AddDebt_Click(this, null);
+            }
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
